@@ -1,8 +1,57 @@
+import "./assets/github-markdown.css";
+import "./assets/atom-one-light.css";
+import './assets/common.scss';
+
 import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import Router from 'vue-router'
+
+import 'D:/Nodejs/Project/view-ui/view-ui/style/table.scss'
+import 'D:/Nodejs/Project/view-ui/view-ui/style/appbar.scss'
+import viewUi from 'D:/Nodejs/Project/view-ui/view-ui'
+
+import axios from 'axios'
+
+import App from './App'
+import themes from './themes'
+import routes from './views/routes'
+import demoCode from './components/demo-code'
+
+const upload = {
+  "filePath": 'http://file.dev.me/',
+  /**
+   * upload组件的数据提交函数
+   * @param {String} url 图片上传地址
+   * @param {Object} formData 要上传的图片FormData
+   * @returns {Array} 上传成功后的rul数组
+   */
+  async post(url, formData) {
+    const { data } = await axios.post(url, formData)
+    return data.files
+  },
+}
+
+Vue.use(viewUi, {
+  "theme": {
+    "default": "black",
+    "customize": themes
+  },
+  "components": {
+    "upload": upload,
+    "uploadDrag": upload
+  }
+})
+
+Vue.use(Router)
+
+Vue.component('demo-code', demoCode)
+
+let router = new Router({ routes })
 
 Vue.config.productionTip = false
+
+Vue.prototype.$http = axios
+
+axios.defaults.baseURL = 'http://localhost:8600/'
 
 new Vue({
   router,

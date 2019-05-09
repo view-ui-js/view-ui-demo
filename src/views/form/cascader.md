@@ -12,20 +12,20 @@ export default {
       area: {
         gd: {
           value: "广东",
-          subset: {
+          children: {
             sz: {
               value: "深圳",
-              subset: {
+              children: {
                 ft: {
                   value: "福田",
-                  subset: {
+                  children: {
                     ba: "购物公园",
                     ns: "华强北"
                   }
                 },
                 ba: {
                   value: "宝安",
-                  subset: {
+                  children: {
                     ba: "灵芝",
                     ns: "宝体"
                   }
@@ -35,7 +35,7 @@ export default {
             },
             gz: {
               value: "广州",
-              subset: {
+              children: {
                 c1: "天河",
                 c2: "番禺"
               }
@@ -57,7 +57,7 @@ export default {
         },
         zj: {
           value: "浙江",
-          subset: {
+          children: {
             c1: {
               value: "杭州"
             }
@@ -65,10 +65,10 @@ export default {
         },
         hb: {
           value: "湖北",
-          subset: {
+          children: {
             wh: {
               value: "武汉",
-              subset: {
+              children: {
                 wc: "武昌",
                 hk: "汉口"
               }

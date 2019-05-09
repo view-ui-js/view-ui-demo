@@ -1,0 +1,18 @@
+.bubble .button {
+  position: relative;
+  margin: 10px;
+}
+.bubble .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.bubble .bottom-rigth {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.bubble .margin100 {
+  margin: 100px;
+}
+

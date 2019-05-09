@@ -1,0 +1,11 @@
+.float-menu .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.float-menu .bottom-rigth {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+

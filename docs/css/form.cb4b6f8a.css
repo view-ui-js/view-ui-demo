@@ -1,0 +1,15 @@
+.w300 {
+  width: 300px;
+}
+
+.date {
+  overflow: visible;
+}
+.date .flex-level > div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+}
+

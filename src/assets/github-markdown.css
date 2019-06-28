@@ -19,10 +19,6 @@
  .markdown-body a:hover {
    outline: 0;
  }
-
- .markdown-body p {
-  line-height: 1.6;
-}
  
  .markdown-body strong {
    font-weight: 500;

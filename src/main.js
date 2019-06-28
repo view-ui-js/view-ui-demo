@@ -2,19 +2,19 @@ import "./assets/github-markdown.css";
 import "./assets/atom-one-light.css";
 import './assets/common.scss';
 
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from 'vue';
+import Router from 'vue-router';
 
-import 'D:/Nodejs/Project/view-ui/view-ui/style/table.scss'
-import 'D:/Nodejs/Project/view-ui/view-ui/style/appbar.scss'
-import viewUi from 'D:/Nodejs/Project/view-ui/view-ui'
+import 'view-ui/style/table.scss';
+import 'view-ui/style/appbar.scss';
+import viewUi from 'view-ui';
 
-import axios from 'axios'
+import axios from 'axios';
 
-import App from './App'
-import themes from './themes'
-import routes from './views/routes'
-import demoCode from './components/demo-code'
+import App from './App';
+import themes from './themes';
+import routes from './views/routes';
+import demoCode from './components/demo-code';
 
 const upload = {
   "filePath": 'http://file.dev.me/',

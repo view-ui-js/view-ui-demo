@@ -1,7 +1,7 @@
 <template>
-   <div class="flex-level">
-      <div ref="mountNode" id="mountNode"></div>
-   </div>
+  <div class="flex-level">
+    <div ref="mountNode" id="mountNode"></div>
+  </div>
 </template>
 
 <script>
@@ -21,24 +21,19 @@ export default {
     ];
     const chart = new G2.Chart({
       container: this.$refs.mountNode,
-      forceFit: true,
-      // height: window.innerHeight,
+      // forceFit: true,
       width: 600, // 指定图表宽度
       height: 300 // 指定图表高度
     });
     chart.source(data);
-    chart.scale("value", {
-      min: 0
-    });
-    chart.scale("year", {
-      range: [0, 1]
-    });
+    chart.scale("value", { min: 0 });
+    chart.scale("year", { range: [0, 1] });
     chart.tooltip({
       crosshairs: {
         type: "line"
       }
     });
-    chart.line().position("year*value");
+    // chart.line().position("year*value");
     chart
       .point()
       .position("year*value")

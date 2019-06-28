@@ -27,7 +27,7 @@ export default {
           icon: "\ue60a"
         },
         cascader: {
-          name: "级联菜单",
+          name: "cascader",
           icon: "\ue60a"
         },
         date: {
@@ -35,19 +35,19 @@ export default {
           icon: "\ue60a"
         },
         upload: {
-          name: "文件上传",
+          name: "upload",
           icon: "\ue60a"
         },
         slider: {
-          name: "滑块",
+          name: "slider",
           icon: "\ue60a"
         },
         tag: {
-          name: "标签",
+          name: "tag",
           icon: "\ue60a"
         },
         switch: {
-          name: "开关",
+          name: "switch",
           icon: "\ue60a"
         }
       }

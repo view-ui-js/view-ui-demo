@@ -4,6 +4,9 @@
   <div class="p10">
     <vi-switch v-model="data"></vi-switch>
   </div>
+  <div class="p10">
+    <vi-switch :disable="true" v-model="data"></vi-switch>
+  </div>
   <div class="p10">{{data}}</div>
 ```
 :::

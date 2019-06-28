@@ -14,11 +14,11 @@ select分为可编辑和不可编辑两种使用方式。当options为对象类�
 
 ### 可编辑下拉菜单，options只接受数组类型
 
-<vi-select v-model="editSelect" edit :options="colorArray" placeholder="选择颜色"></vi-select>
+<vi-select-edit v-model="editSelect" :options="colorArray" placeholder="选择颜色"></vi-select-edit>
 <p>{{editSelect}}</p>
 
 ```html
-  <vi-select v-model="editSelect" edit :options="colorArray" placeholder="选择颜色"></vi-select>
+  <vi-select-edit v-model="editSelect" :options="colorArray" placeholder="选择颜色"></vi-select-edit>
   <p>{{editSelect}}</p>
 ```
 

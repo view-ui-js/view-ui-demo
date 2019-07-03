@@ -5,9 +5,9 @@ import './assets/common.scss';
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import 'view-ui/style/table.scss';
-import 'view-ui/style/appbar.scss';
 import viewUi from 'view-ui';
+import 'view-template/appbar/style.scss';
+import 'view-template/table/style.scss';
 
 import axios from 'axios';
 
@@ -45,13 +45,13 @@ Vue.use(Router)
 
 Vue.component('demo-code', demoCode)
 
-let router = new Router({ routes })
+const router = new Router({ routes })
 
 Vue.config.productionTip = false
 
 Vue.prototype.$http = axios
 
-axios.defaults.baseURL = 'http://localhost:8600/'
+axios.defaults.baseURL = 'http://localhost:8600/';
 
 new Vue({
   router,

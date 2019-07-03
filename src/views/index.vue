@@ -41,29 +41,9 @@ export default {
           name: "导航",
           icon: "\ue61a"
         },
-        style: {
-          name: "CSS组件",
-          icon: "\ue615"
-        },
-        layout: {
-          name: "布局",
-          icon: "\ue61a"
-        },
-        example: {
-          name: "实例",
-          icon: "\ue63f"
-        },
-        chart: {
-          name: "图表",
-          icon: "\ue651"
-        },
-        // user: {
-        //   name: "用户",
+        // layout: {
+        //   name: "布局",
         //   icon: "\ue61a"
-        // },
-        // settings: {
-        //   name: "设置",
-        //   icon: "\ue6d8"
         // },
         document: {
           name: "文档",

@@ -1,14 +1,20 @@
 :::demo
 ```html
-<vi-menu class="vi-menu-demo" :items="items"></vi-menu>
+<vi-menu :items="items"></vi-menu>
 
 <br>
 
-<vi-menu class="vi-menu-demo" :items="items" skin="null"></vi-menu>
+<vi-menu :items="items"></vi-menu>
 
 <br>
 
-<vi-menu-line class="vi-menu-demo" :items="items"></vi-menu-line>
+<vi-menu class="vi-menu-round" :items="items"></vi-menu>
+
+<br>
+
+<vi-menu-line :items="items"></vi-menu-line>
+
+<br>
 
 <script>
 export default {
@@ -44,9 +50,9 @@ export default {
 :::
 
 <style lang="scss">
-.vi-menu-demo {
-  height: 40px;
-  background-color: #fff;
-  box-shadow: 0 2px 2px #f3f3f3;
+@import "view-ui/menu/round.scss";
+.vi-menu {
+   height: 50px;
+   box-shadow: 0 2px 5px #f3f3f3;
 }
 </style>

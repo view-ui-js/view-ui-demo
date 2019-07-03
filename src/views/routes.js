@@ -1,14 +1,11 @@
 import index from './index.vue'
-import _default from './default.vue'
-import _404 from './404.vue'
+import _default from 'view-template/default.vue'
+import _404 from 'view-template/404.vue'
 
 import base from './base/'
 import form from './form/'
 import layout from './layout/'
-import style from './style/'
 import navigation from './navigation/'
-import example from './example/'
-import chart from './chart/'
 
 export default [
    {
@@ -81,16 +78,6 @@ export default [
             ]
          },
          {
-            path: 'style',
-            component: style,
-            children: [
-               {
-                  path: 'menu',
-                  component: () => import('./style/menu.md')
-               },
-            ]
-         },
-         {
             path: 'navigation',
             component: navigation,
             children: [
@@ -152,46 +139,6 @@ export default [
                {
                   path: 'switch',
                   component: () => import('./form/switch.md')
-               }
-            ]
-         },
-         {
-            path: 'example',
-            component: example,
-            children: [
-               {
-                  path: '',
-                  component: _default
-               },
-               {
-                  path: 'list1',
-                  component: () => import('./example/list1')
-               },
-               {
-                  path: 'list2',
-                  component: () => import('./example/list2')
-               }
-            ]
-         },
-         {
-            path: 'chart',
-            component: chart,
-            children: [
-               {
-                  path: '',
-                  component: _default
-               },
-               {
-                  path: 'line',
-                  component: () => import('./chart/line')
-               },
-               {
-                  path: 'column',
-                  component: () => import('./chart/column')
-               },
-               {
-                  path: 'pie',
-                  component: () => import('./chart/pie')
                }
             ]
          },

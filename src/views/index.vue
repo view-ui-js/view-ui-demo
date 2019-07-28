@@ -3,7 +3,7 @@
       <vi-navbar :menu="menu">
          <div class="logo" slot="top">
             <router-link to="/">
-               <i class="iconfont">&#xe60a;</i>
+               <i class="iconfont">&#xe600;</i>
             </router-link>
          </div>
          <a class="nav-user">
@@ -31,7 +31,7 @@ export default {
       menu: {
         base: {
           name: "基础",
-          icon: "\ue64f"
+          icon: "\ue614"
         },
         form: {
           name: "表单",
@@ -47,7 +47,7 @@ export default {
         // },
         document: {
           name: "文档",
-          icon: "\ueb21"
+          icon: "\ue615"
         }
       }
     };

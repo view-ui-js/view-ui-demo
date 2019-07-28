@@ -28,7 +28,7 @@ export default {
       options: [
         {
           name: "数据同步",
-          icon: "\ue60a",
+          icon: "\ue600",
           action(options) {
             if (options.name === "数据同步a") {
               options.name = "数据同步b";
@@ -39,17 +39,17 @@ export default {
         },
         {
           name: "导入商品",
-          icon: "\ue60a",
+          icon: "\ue600",
           action() {}
         },
         {
           name: "网格视图",
-          icon: "\ue60a",
+          icon: "\ue600",
           action() {}
         },
         {
           name: "快速编辑",
-          icon: "\ue60a",
+          icon: "\ue600",
           action() {}
         }
       ]

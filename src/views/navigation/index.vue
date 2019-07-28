@@ -12,11 +12,11 @@ export default {
       menu: {
         "navbar": {
           name: "导航",
-          icon: "\ue60a"
+          icon: "\ue600"
         },
         "paging": {
           name: "分页",
-          icon: "\ue60a"
+          icon: "\ue600"
         },
       }
     };

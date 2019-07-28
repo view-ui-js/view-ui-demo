@@ -12,11 +12,11 @@ export default {
       menu: {
         "level": {
           name: "水平",
-          icon: "\ue60a"
+          icon: "\ue600"
         },
         "vertical": {
           name: "垂直",
-          icon: "\ue60a"
+          icon: "\ue600"
         },
       }
     };

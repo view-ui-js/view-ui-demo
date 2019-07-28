@@ -12,43 +12,43 @@ export default {
       menu: {
         "input/input": {
           name: "input",
-          icon: "\ue60a"
+          icon: "\ue600"
         },
         "input/range": {
           name: "input range",
-          icon: "\ue60a"
+          icon: "\ue600"
         },
         radio: {
           name: "radio",
-          icon: "\ue60a"
+          icon: "\ue600"
         },
         select: {
           name: "select",
-          icon: "\ue60a"
+          icon: "\ue600"
         },
         cascader: {
           name: "cascader",
-          icon: "\ue60a"
+          icon: "\ue600"
         },
         date: {
           name: "date picker",
-          icon: "\ue60a"
+          icon: "\ue600"
         },
         upload: {
           name: "upload",
-          icon: "\ue60a"
+          icon: "\ue600"
         },
         slider: {
           name: "slider",
-          icon: "\ue60a"
+          icon: "\ue600"
         },
         tag: {
           name: "tag",
-          icon: "\ue60a"
+          icon: "\ue600"
         },
         switch: {
           name: "switch",
-          icon: "\ue60a"
+          icon: "\ue600"
         }
       }
     };

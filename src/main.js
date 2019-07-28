@@ -1,6 +1,7 @@
 import "./assets/github-markdown.css";
 import "./assets/atom-one-light.css";
 import './assets/common.scss';
+import './assets/icon/iconfont.css';
 
 import Vue from 'vue';
 import Router from 'vue-router';

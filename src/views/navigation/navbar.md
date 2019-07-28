@@ -3,7 +3,7 @@
 <vi-navbar :menu="menu">
    <div class="logo" slot="top">
       <router-link to="/">
-         <i class="iconfont">&#xe60a;</i>
+         <i class="iconfont">&#xe600;</i>
       </router-link>
    </div>
    <a class="nav-user">

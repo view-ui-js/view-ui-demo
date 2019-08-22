@@ -8,7 +8,7 @@ import Router from 'vue-router';
 
 import viewUi from 'view-ui';
 import 'view-template/appbar/style.scss';
-import 'view-template/table/style.scss';
+import 'view-template/list/style.scss';
 
 import axios from 'axios';
 

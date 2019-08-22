@@ -19,7 +19,7 @@ dialog由header、main、footer三部分组成，配置优先级依次为slot ->
     </template>
 </vi-dialog>
 
-<vi-dialog v-if="dialogTab" width="660px" height="500px" @confirm="dialogTab=false" @close="dialogTab=false">
+<vi-dialog v-if="dialogTab" @confirm="dialogTab=false" @close="dialogTab=false">
     <vi-tabs :tabs="tabs">
       <div slot="商品信息" class="p10">
           <br><br><br>

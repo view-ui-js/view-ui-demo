@@ -125,6 +125,10 @@ export default [
                   component: () => import(/* webpackChunkName: "form" */ './form/date.md')
                },
                {
+                  path: 'image',
+                  component: () => import(/* webpackChunkName: "form" */ './form/image.md'),
+               },
+               {
                   path: 'upload',
                   component: () => import(/* webpackChunkName: "form" */ './form/upload.md'),
                },

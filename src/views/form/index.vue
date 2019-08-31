@@ -34,6 +34,10 @@ export default {
           name: "date picker",
           icon: "\ue600"
         },
+        image: {
+          name: "image",
+          icon: "\ue600"
+        },
         upload: {
           name: "upload",
           icon: "\ue600"

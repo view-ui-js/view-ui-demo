@@ -47,7 +47,9 @@ export default {
   },
   methods: {
     async submit() {
-      await this.$refs.upload.submit("upload/test");
+      await this.$refs.upload.submit(function(formData){
+        console.log(formData);
+      });
     }
   }
 };

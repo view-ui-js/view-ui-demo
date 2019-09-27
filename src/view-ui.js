@@ -12,8 +12,8 @@ import button from 'view-ui/button.vue';
 Vue.use(button);
 
 // 弹层
-import dialog from 'view-ui/dialog/dialog.vue';
-import $confirm from 'view-ui/dialog/$confirm.vue';
+import dialog from 'view-ui/dialog.vue';
+import $confirm from 'view-ui/$confirm.vue';
 
 Vue.use(dialog);
 Vue.use($confirm);
@@ -68,7 +68,7 @@ Vue.use($imagePreview);
 
 
 // 气泡
-import bubble from 'view-ui/bubble/bubble-absolute.vue';
+import bubble from 'view-ui/bubble.vue';
 
 Vue.use(bubble);
 

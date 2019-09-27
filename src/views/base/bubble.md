@@ -11,7 +11,7 @@
    </vi-button>
    <vi-button class="fl">
       按钮
-      <vi-bubble>
+      <vi-bubble :border="false">
          下居中下居中下居中
          <br>下居中下居中下居中
          <br>下居中下居中下居中

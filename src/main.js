@@ -10,7 +10,7 @@ import axios from 'axios';
 import App from './App';
 import viewUi from './view-ui.js';
 import routes from './views/routes.js';
-import demoCode from './components/demo-code';
+import demoCode from './components/demo-code.vue';
 import themes from './themes.js';
 
 viewUi.add("lightGreen", themes.lightGreen);

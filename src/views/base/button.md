@@ -30,11 +30,11 @@
 ```
 :::
 
-### round
+### fab
 
 :::demo
 ```html
-<vi-button round><i class="iconfont icon-dingwei"></i></vi-button>
+<vi-button fab><i class="iconfont icon-dingwei"></i></vi-button>
 ```
 :::
 

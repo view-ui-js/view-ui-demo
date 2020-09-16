@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, sans-serif;
+  background-color: #fbfbfb;
+  color: #666;
+  font-size: 14px;
+  .router {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  a,
+  button {
+    text-decoration: none;
+    outline: none;
+  }
+
+  ::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+.click {
+  user-select: none;
+  cursor: pointer;
+}
+
+.scroll {
+  overflow-y: overlay;
+}
+
+.vd,
+[class^="vd-"],
+[class*=" vd-"] {
+  font-family: "vd" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.markdown-body {
+  width: 100%;
+}

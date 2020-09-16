@@ -1,39 +1,30 @@
 import "./assets/github-markdown.css";
 import "./assets/atom-one-light.css";
-import './assets/common.scss';
-import './assets/icon/iconfont.css';
+import '@/views/style/index.js';
 
 import Vue from 'vue';
 import Router from 'vue-router';
-import axios from 'axios';
 
 import App from './App';
 import viewUi from './view-ui.js';
 import routes from './views/routes.js';
-import demoCode from './components/demo-code.vue';
+import demoCode from './components/DemoCode.vue';
 import themes from './themes.js';
+import './components/index.js';
 
 viewUi.add("lightGreen", themes.lightGreen);
 
-viewUi.use('black');
+const { theme } = localStorage;
 
-Vue.use(Router)
+viewUi.use(theme || 'black');
 
-Vue.component('demo-code', demoCode)
+Vue.use(Router);
+
+Vue.component('DemoCode', demoCode)
 
 const router = new Router({ routes })
 
-Vue.config.productionTip = false
-
-Vue.prototype.$http = axios;
-
-Vue.prototype.config = {
-  upload: {
-    base: "http://www.static.com/"
-  }
-};
-
-axios.defaults.baseURL = 'http://localhost:8600/';
+Vue.config.productionTip = false;
 
 new Vue({
   router,

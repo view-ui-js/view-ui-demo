@@ -1,11 +1,8 @@
 import index from './index.vue'
-import _default from 'view-template/default.vue'
-import _404 from 'view-template/404.vue'
+import _404 from 'view-ui/Page/404.vue'
 
-import base from './base/'
-import form from './form/'
-import layout from './layout/'
-import navigation from './navigation/'
+import Main from '@/components/Main.vue';
+import Default from '@/components/Default.vue';
 
 export default [
    {
@@ -14,141 +11,141 @@ export default [
       children: [
          {
             path: '',
-            component: _default
+            component: () => import('./Home/index.md')
          },
          {
             path: 'base',
-            component: base,
+            component: Main,
             children: [
                {
                   path: '',
-                  component: _default
+                  component: Default
                },
                {
                   path: 'button',
-                  component: () => import('./base/button.md')
+                  component: () => import('./Base/button.md')
                },
                {
                   path: 'dialog',
-                  component: () => import('./base/dialog.md')
+                  component: () => import('./Base/dialog.md')
                },
                {
                   path: 'message',
-                  component: () => import('./base/message.md')
+                  component: () => import('./Base/message.md')
                },
                {
                   path: 'tabs',
-                  component: () => import('./base/tabs.md')
+                  component: () => import('./Base/tabs.md')
                },
                {
                   path: 'bubble',
-                  component: () => import('./base/bubble.md')
+                  component: () => import('./Base/bubble.md')
                },
                {
                   path: 'dropdown',
-                  component: () => import('./base/dropdown.md')
+                  component: () => import('./Base/dropdown.md')
                },
                {
                   path: 'floatMenu',
-                  component: () => import('./base/float-menu.md')
+                  component: () => import('./Base/float-menu.md')
                },
                {
                   path: 'contextmenu',
-                  component: () => import('./base/contextmenu.md')
+                  component: () => import('./Base/contextmenu.md')
                },
                {
                   path: 'drawer',
-                  component: () => import('./base/drawer.md')
+                  component: () => import('./Base/drawer.md')
                },
                {
                   path: 'tip',
-                  component: () => import('./base/tip.md')
+                  component: () => import('./Base/tip.md')
                },
                {
                   path: 'loading',
-                  component: () => import('./base/loading.md')
+                  component: () => import('./Base/loading.md')
                }
             ]
          },
          {
             path: 'layout',
-            component: layout,
+            component: Main,
             children: [
 
             ]
          },
          {
             path: 'navigation',
-            component: navigation,
+            component: Main,
             children: [
                {
-                  path: 'paging',
-                  component: () => import('./navigation/paging.md')
+                  path: 'pagination',
+                  component: () => import('./Navigation/pagination.md')
                },
                {
                   path: 'navbar',
-                  component: () => import('./navigation/navbar.md')
+                  component: () => import('./Navigation/navbar.md')
                },
             ]
          },
          {
             path: 'form',
-            component: form,
+            component: Main,
             children: [
                {
                   path: '',
-                  component: _default
+                  component: Default
                },
                {
                   path: 'input/input',
-                  component: () => import(/* webpackChunkName: "form" */ './form/input.md')
+                  component: () => import(/* webpackChunkName: "form" */ './Form/input.md')
                   
                },
                {
                   path: 'input/range',
-                  component: () => import(/* webpackChunkName: "form" */ './form/range.md')
+                  component: () => import(/* webpackChunkName: "form" */ './Form/range.md')
                },
                {
                   path: 'radio',
-                  component: () => import(/* webpackChunkName: "form" */ './form/radio.md')
+                  component: () => import(/* webpackChunkName: "form" */ './Form/radio.md')
                },
                {
                   path: 'select',
-                  component: () => import(/* webpackChunkName: "form" */ './form/select.md')
+                  component: () => import(/* webpackChunkName: "form" */ './Form/select.md')
                },
                {
                   path: 'cascader',
-                  component: () => import(/* webpackChunkName: "form" */ './form/cascader.md')
+                  component: () => import(/* webpackChunkName: "form" */ './Form/cascader.md')
                },
                {
                   path: 'date',
-                  component: () => import(/* webpackChunkName: "form" */ './form/date.md')
+                  component: () => import(/* webpackChunkName: "form" */ './Form/date.md')
                },
                {
                   path: 'image',
-                  component: () => import(/* webpackChunkName: "form" */ './form/image.md'),
+                  component: () => import(/* webpackChunkName: "form" */ './Form/image.md'),
                },
                {
                   path: 'upload',
-                  component: () => import(/* webpackChunkName: "form" */ './form/upload.md'),
+                  component: () => import(/* webpackChunkName: "form" */ './Form/upload.md'),
                },
                {
                   path: 'slider',
-                  component: () => import('./form/slider.md')
+                  component: () => import('./Form/slider.md')
                },
                {
                   path: 'tag',
-                  component: () => import('./form/tag.md')
+                  component: () => import('./Form/tag.md')
                },
                {
                   path: 'switch',
-                  component: () => import('./form/switch.md')
+                  component: () => import('./Form/switch.md')
                }
             ]
          },
          {
             path: 'document',
-            component: () => import('./document/'),
+            component: () => import('./Document/index.md'),
          },
          {
             path: '*',

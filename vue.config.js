@@ -1,10 +1,26 @@
 module.exports = {
-  publicPath: "./",
+  publicPath: "/",
+  lintOnSave: false,
   css: {
+    sourceMap: false,
     extract: true,// 样式合并
   },
-  productionSourceMap: false,
-  lintOnSave: false,
+  configureWebpack: {
+    // devtool: false,// 调试map
+    optimization: {
+      // minimize: true,// 代码压缩
+      splitChunks: {
+        name: false
+      }
+    },
+    output: {
+      filename: 'main.js',
+      chunkFilename: '[name].js'
+    }
+  },
+  devServer: {
+    port: '8080'
+  },
   chainWebpack(config) {
     config.resolve.extensions.add('.md');
     config.module
@@ -36,5 +52,6 @@ module.exports = {
           [require('markdown-it-container'), 'warning']
         ]
       });
+
   },
 };

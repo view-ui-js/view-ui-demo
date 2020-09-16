@@ -1,6 +1,6 @@
 {
   "name": "view-ui-docs",
-  "version": "0.1.0",
+  "version": "3.0.0",
   "private": true,
   "description": "view-ui演示文档、实例",
   "scripts": {
@@ -9,26 +9,23 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@better-scroll/core": "^2.0.0-alpha.20",
-    "@better-scroll/slide": "^2.0.0-alpha.20",
-    "view-template": "file:../view-template",
+    "axios": "^0.20.0",
+    "markdown-it-anchor": "^5.3.0",
+    "markdown-it-container": "^3.0.0",
     "view-ui": "file:../view-ui",
-    "vue": "^2.5.17",
-    "vue-router": "^3.0.1",
-    "vue-upload-image": "file:../../vue/vue-upload-image"
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.3"
   },
   "devDependencies": {
-    "@antv/data-set": "^0.9.6",
-    "@antv/g2": "^3.4.10",
-    "@vue/cli-plugin-babel": "^3.0.3",
-    "@vue/cli-plugin-eslint": "^3.0.3",
-    "@vue/cli-service": "^3.0.3",
-    "axios": "^0.18.0",
-    "markdown-it-container": "^2.0.0",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.1",
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "node-sass": "^4.14.1",
+    "postcss-import": "^12.0.1",
+    "sass-loader": "^7.3.1",
     "vue-markdown-loader": "^2.4.1",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.6.12",
+    "webpack-cli": "^3.3.9"
   },
   "eslintConfig": {
     "root": true,

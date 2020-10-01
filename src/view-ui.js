@@ -33,8 +33,9 @@ Vue.use(Buttons);
 
 // 弹层
 import Dialog from 'view-ui/Dialog.vue';
-import $Confirm from 'view-ui/$Confirm.vue';
 Vue.use(Dialog);
+
+import $Confirm from 'view-ui/$Confirm.vue';
 Vue.use($Confirm);
 
 import DialogPage from 'view-ui/DialogPage.vue';
@@ -50,54 +51,33 @@ Vue.use(Search);
  * 表单
  */
 
-import FormPage from 'view-ui/Form/Page.vue';
-Vue.use(FormPage);
- 
-import Form from 'view-ui/Form/Index.vue';
+import Form from 'view-ui/Form.vue';
 Vue.use(Form);
 
-import Input from 'view-ui/Form/Input.vue';
+import FormPage from 'view-ui/FormPage.vue';
+Vue.use(FormPage);
+
+import Input from 'view-ui/Input/Index.js';
 Vue.use(Input);
 
-import InputRange from 'view-ui/Form/InputRange.vue';
-Vue.use(InputRange);
-
-import Textarea from 'view-ui/Form/Textarea.vue';
+import Textarea from 'view-ui/Textarea.vue';
 Vue.use(Textarea);
 
-import Select from 'view-ui/Form/Select/index.js';
+import Select from 'view-ui/Select/index.js';
 Vue.use(Select);
 
-// import Select from 'view-ui/Form/Select.vue';
-// Vue.use(Select);
-
-// import Selects from 'view-ui/Form/Selects.vue';
-// Vue.use(Selects);
-
-// import SelectEdit from 'view-ui/Form/SelectEdit.vue';
-// Vue.use(SelectEdit);
-
-import Cascader from 'view-ui/Form/Cascader.vue';
+import Cascader from 'view-ui/Cascader.vue';
 Vue.use(Cascader);
 
-import Radio from 'view-ui/Form/Radio.vue';
+import Radio from 'view-ui/Radio.vue';
 Vue.use(Radio);
 
+import Tag from 'view-ui/Tag.vue';
+Vue.use(Tag);
 
 // 日期选择器
-import DateInline from 'view-ui/Date/Inline.vue';
-import DateInlineRange from 'view-ui/Date/Range.vue';
-Vue.use(DateInline);
-Vue.use(DateInlineRange);
-
-// 内联日期
-import DatePicker from 'view-ui/Date/Picker.vue';
-import DatePickerRange from 'view-ui/Date/PickerRange.vue';
-Vue.use(DatePicker);
-Vue.use(DatePickerRange);
-
-import Tag from 'view-ui/Form/Tag.vue';
-Vue.use(Tag);
+import Date from 'view-ui/Date/Index.vue';
+Vue.use(Date);
 
 import Switch from 'view-ui/Switch.vue';
 Vue.use(Switch);
@@ -113,14 +93,14 @@ import Img from "view-ui/Img.vue";
 Vue.use(Img);
 
 // 单图上传
-import Image from "view-ui/Form/Image.vue";
+import Image from "view-ui/Image.vue";
 
 Vue.use(Image, function(url, data) {
   return axios.post(url, data);
 });
 
 // 多图上传
-import Images from "view-ui/Form/Images.vue";
+import Images from "view-ui/Images.vue";
 
 Vue.use(Images, function(url, data) {
   return axios.post(url, data);
@@ -133,14 +113,6 @@ Vue.use(Bubble);
 // 警示框
 import Alert from 'view-ui/Alert.vue';
 Vue.use(Alert);
-
-// 消息框
-import $Message from 'view-ui/$Message.vue';
-Vue.use($Message);
-
-// 图片预览
-import $ImagePreview from 'view-ui/$ImagePreview.vue';
-Vue.use($ImagePreview);
 
 // tab选项卡
 import Tabs from 'view-ui/Tabs.vue';
@@ -182,12 +154,24 @@ Vue.use(DropdownRange);
 import Pagination from 'view-ui/Pagination.vue';
 Vue.use(Pagination);
 
+import MenuLine from 'view-ui/Menu/Line.vue';
+Vue.use(MenuLine);
+
+// 消息框
+import $Message from 'view-ui/$Message.vue';
+Vue.use($Message);
+
+// 图片预览
+import $ImagePreview from 'view-ui/$ImagePreview.vue';
+Vue.use($ImagePreview);
+
 // 右键菜单
 import $ContextMenu from 'view-ui/$ContextMenu.vue';
 Vue.use($ContextMenu);
 
-import MenuLine from 'view-ui/Menu/Line.vue';
-Vue.use(MenuLine);
+// 图片预览
+import $ImgPreview from 'view-ui/$ImgPreview.vue';
+Vue.use($ImgPreview);
 
 import theme from 'view-ui/theme.js';
 

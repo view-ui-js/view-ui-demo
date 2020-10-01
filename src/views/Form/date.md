@@ -1,16 +1,16 @@
 <div class="date">
   <div class="flex-level">
       <div class="p10">
-        <DateInline :value="ymd"></DateInline>
+        <Date :value="date"></Date>
       </div>
       <div class="p10">
         <div>单选</div>
-        <DatePicker v-model="date"></DatePicker>
+        <Input v-model="date" type="date"></Input>
         <div>{{date}}</div>
       </div>
       <div class="p10">
         <div>范围</div>
-        <DatePicker-range v-model="range"></DatePicker-range>
+        <Input v-model="range" type="date" range></Input>
         <div>{{range}}</div>
       </div>
   </div>
@@ -20,7 +20,7 @@
 export default {
   data() {
     return {
-      ymd: [2018, 2, 26],
+      // ymd: [2018, 2, 26],
       date: "2018-2-26",
       range: ["2018-5-15", "2018-6-21"]
     };

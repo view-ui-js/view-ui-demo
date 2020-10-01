@@ -1,4 +1,4 @@
-global.menu = {
+const menu = {
   base: {
     name: "基础",
     icon: "vd-changyongshili",
@@ -54,14 +54,14 @@ global.menu = {
     name: "表单",
     icon: "vd-form",
     children: {
-      "input/input": {
+      input: {
         name: "input",
         icon: "vd-logo",
       },
-      "input/range": {
-        name: "input range",
-        icon: "vd-logo",
-      },
+      // "input-range": {
+      //   name: "input range",
+      //   icon: "vd-logo",
+      // },
       radio: {
         name: "radio",
         icon: "vd-logo",
@@ -125,4 +125,6 @@ global.menu = {
   },
 }
 
-export default global.menu;
+global.menu = menu;
+
+export default menu;

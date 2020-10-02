@@ -3,13 +3,13 @@
 :::demo
 ```html
 <div class="slider">
-    <Slider :range="[0,500]" v-model="data" @change="change"></Slider>
+    <Slider :min="0" :max="500" v-model="data" @change="change"></Slider>
 </div>
 <div class="p10">{{data}}</div>
 
 <div class="slider">
     <div>带标尺</div>
-    <Slider :range="[0,500]" :step="5" v-model="data1" @change="change"></Slider>
+    <Slider :min="0" :max="500" :step="5" v-model="data1" @change="change"></Slider>
 </div>
 <div class="p10">{{data1}}</div>
 ```
@@ -22,17 +22,17 @@
 :::demo
 ```html
 <div class="slider">
-    <Slider-range :range="[0,500]" v-model="data1" @change="change"></Slider-range>
+    <Slider :min="0" :max="500" v-model="data1" range @change="change"></Slider>
 </div>
 
 <div class="slider">
     <div>带标尺</div>
-    <Slider-range :range="[0,500]" :step="5" v-model="data1" unit="万" @change="change"></Slider-range>
+    <Slider :min="0" :max="500" :step="5" v-model="data1" unit="万" range @change="change"></Slider>
 </div>
 
 <div class="slider">
     <div>还原值</div>
-    <Slider-range :range="[0,500]" :step="5" v-model="data2" unit="个"></Slider-range>
+    <Slider :min="0" :max="500" :step="5" v-model="data2" unit="个" range></Slider>
 </div>
 
 <div class="p10">{{data2}}</div>

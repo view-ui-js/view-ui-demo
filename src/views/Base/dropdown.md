@@ -12,15 +12,14 @@
   </Dropdown>
   <Dropdown name="滑块">
       <div class="bubble" @click.stop>
-        <Slider :range="[0,500]" :step="5" v-model="data2"></Slider>
-        <SliderRange :range="[0,500]" :step="5" v-model="data2"></SliderRange>
+        <Slider :min="0" :max="500" :step="5" v-model="data2"></Slider>
+        <Slider :min="0" :max="500" :step="5" v-model="data2" range></Slider>
       </div>
   </Dropdown>
   <DropdownRange name="范围" unit="元" :step="5" :options="rangeOptions" v-model="data2" @change="change({'floor':{'$scope':$event}})"></DropdownRange>
   <Button @click="reset">初始化</Button>
   <DropdownMenu class="fr" name="右自适应" :options="options2" @change="change"></DropdownMenu>
 </div>
-
 
 <script>
 export default {
@@ -54,7 +53,6 @@ export default {
   }
 };
 </script>
-
 
 <style lang="scss">
 .dropdown {

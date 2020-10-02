@@ -20,9 +20,9 @@ viewUi.use(theme || 'black');
 
 Vue.use(Router);
 
-Vue.component('DemoCode', demoCode)
+Vue.component('DemoCode', demoCode);
 
-const router = new Router({ routes })
+const router = new Router({ routes });
 
 Vue.config.productionTip = false;
 

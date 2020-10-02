@@ -18,12 +18,11 @@
 
 <script>
 import theme from "view-ui/theme.js";
-import menu from "./menu.js";
 export default {
   data() {
     return {
       theme,
-      menu,
+      menu: global.menu,
     };
   },
 };

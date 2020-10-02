@@ -63,7 +63,7 @@ Vue.use(Input);
 import Textarea from 'view-ui/Textarea.vue';
 Vue.use(Textarea);
 
-import Select from 'view-ui/Select/index.js';
+import Select from 'view-ui/Select/Index.js';
 Vue.use(Select);
 
 import Cascader from 'view-ui/Cascader.vue';
@@ -83,10 +83,8 @@ import Switch from 'view-ui/Switch.vue';
 Vue.use(Switch);
 
 // 滑块
-import Slider from "view-ui/Slider/Index.vue";
-import SliderRange from "view-ui/Slider/Range.vue";
+import Slider from "view-ui/Slider/Index.js";
 Vue.use(Slider);
-Vue.use(SliderRange);
 
 // 图片
 import Img from "view-ui/Img.vue";
@@ -141,7 +139,7 @@ Vue.use(Tip);
 import FloatMenu from 'view-ui/FloatMenu.vue';
 Vue.use(FloatMenu);
 
-// 下拉菜单
+// 下拉框
 import Dropdown from 'view-ui/Dropdown/Index.vue';
 import DropdownSelect from 'view-ui/Dropdown/Select.vue';
 import DropdownRange from 'view-ui/Dropdown/Range.vue';
